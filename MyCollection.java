@@ -37,11 +37,41 @@ public class MyCollection{
 
 
     public void replaceElement(int index , Object obj){
-        if (index < 0 || index > size-1 )
-
-            throw  new IndexOutOfBoundsException(index);
-
+        if (index < 0 || index > size-1 ) {
+            throw new IndexOutOfBoundsException(index);
+        }
          myArray[index] = obj;
+
+    }
+
+    public void removeElement(int index){
+        if (index <0 || index >=size){
+            throw new IndexOutOfBoundsException(index);
+        }
+
+        while (index > size-1){
+            myArray[index] = myArray[index+1];
+            index++;
+        }
+
+        myArray[index] = null;
+        size--;
+    }
+
+    public void insertElement(int index , Object obj){
+        if (getSize() == getCapacity()) {
+            increaseCapacity();
+        }
+
+        if (index <0 || index > size) {
+            throw new IndexOutOfBoundsException(index);
+        }
+
+        for (int i = size-1; i >= index ; i--) {
+            myArray[i+1]  = myArray[i];
+        }
+        myArray[index] = obj;
+        size++;
     }
 
 
