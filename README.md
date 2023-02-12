@@ -11,9 +11,9 @@ Familiarity with Java collection framework
 Steps to Create a Custom Collection
 Decide the type of collection you need:
 
-List - to store a collection of elements in a specific order
-Set - to store a collection of unique elements
-Map - to store key-value pairs
+#### List - to store a collection of elements in a specific order
+#### Set - to store a collection of unique elements
+#### Map - to store key-value pairs
 Choose the appropriate class or interface to extend or implement:
 
 If you need a list, extend the java.util.AbstractList class or implement the java.util.List interface
