@@ -1,4 +1,4 @@
-Custom Collection in Java
+#Custom Collection in Java
 A collection is a group of objects stored in a single unit. Java provides several built-in collections such as ArrayList, LinkedList, HashMap, etc. However, there may be a scenario where the built-in collections may not fulfill the requirement. In such cases, a custom collection can be created by extending the existing collection classes or implementing the collection interfaces.
 
 In this guide, we will discuss the steps to create a custom collection in Java.
